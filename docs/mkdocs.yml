@@ -2,6 +2,7 @@ site_name: "bubl-ai"
 site_dir: ../site
 nav:
   - Home:
+    - index.md
     - Hello World: hello_world.md
 
 theme:
