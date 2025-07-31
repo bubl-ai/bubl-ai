@@ -36,7 +36,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-include-dir-to-nav
+          pip install mkdocs mkdocs-material mkdocs-include-dir-to-nav mkdocs-jupyter
           # Add any other MkDocs plugins you're using, for example:
           # pip install mkdocs-mermaid2-plugin mkdocs-minify-plugin
 
