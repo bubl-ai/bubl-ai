@@ -17,7 +17,7 @@ theme:
   - content.code.copy
   name: material
   palette:
-    - accent: lime
+    - accent: green
       media: "(prefers-color-scheme: light)"
       primary: white
       scheme: default
