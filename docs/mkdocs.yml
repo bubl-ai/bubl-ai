@@ -16,11 +16,11 @@ theme:
   - search.highlight
   - content.code.copy
   name: material
-  # palette:
-  #   - accent: teal
-  #     media: "(prefers-color-scheme: light)"
-  #     primary: white
-  #     scheme: default
+  palette:
+    - accent: indigo
+      media: "(prefers-color-scheme: light)"
+      primary: white
+      scheme: default
 plugins:
   - search
   - include_dir_to_nav
