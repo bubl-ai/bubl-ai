@@ -1,4 +1,5 @@
 site_name: "bubl-ai"
+site_dir: ../site
 nav:
   - Home:
     - Hello World: hello_world.md
