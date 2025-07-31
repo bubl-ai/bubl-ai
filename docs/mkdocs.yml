@@ -7,3 +7,21 @@ nav:
 theme:
   logo: _static/logo.png
   favicon: _static/logo.png
+  features:
+  - navigation.indexes
+  - navigation.instant
+  - toc.follow
+  - search.suggest
+  - search.highlight
+  - content.code.copy
+  name: material
+  # palette:
+  #   - accent: teal
+  #     media: "(prefers-color-scheme: light)"
+  #     primary: white
+  #     scheme: default
+plugins:
+  - search
+  - include_dir_to_nav
+  - mkdocs-jupyter:
+      execute: false
