@@ -42,9 +42,8 @@ jobs:
 
       - name: Build MkDocs site
         run: |
-          # Navigate to your mkdocs folder and build
-          cd docs/mkdocs
-          mkdocs build --site-dir ../../_site
+          cd docs
+          mkdocs build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -52,7 +51,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
+          path: 'site'
 
   # Deploy job
   deploy:
