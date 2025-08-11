@@ -4,6 +4,7 @@ nav:
   - Home:
     - index.md
     - Hello World: hello_world.md
+    - RPi Setup: rpi_setup.md
 
 theme:
   logo: _static/logo.png
