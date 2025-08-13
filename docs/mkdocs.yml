@@ -27,3 +27,12 @@ plugins:
   - include_dir_to_nav
   - mkdocs-jupyter:
       execute: false
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/santiago-olivar
+    - icon: fontawesome/brands/github
+      link: https://github.com/bubl-ai/
+    - icon: fontawesome/solid/envelope
+      link: mailto:contact.bubl.ai@example.com
