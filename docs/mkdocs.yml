@@ -5,12 +5,15 @@ nav:
     - index.md
     - Hello World: hello_world.md
     - RPi Setup: rpi_setup.md
+  - LinkedIn: https://linkedin.com/in/yourusername
+  - GitHub: https://github.com/yourusername
 
 theme:
   logo: _static/logo.png
   favicon: _static/logo.png
   features:
   - navigation.indexes
+  - navigation.top
   - navigation.instant
   - toc.follow
   - search.suggest
@@ -36,3 +39,5 @@ extra:
       link: https://github.com/bubl-ai/
     - icon: fontawesome/solid/envelope
       link: mailto:contact.bubl.ai@example.com
+    - icon: fontawesome/solid/face-grin-tears
+      link: https://twitter.com/bubl_ai
