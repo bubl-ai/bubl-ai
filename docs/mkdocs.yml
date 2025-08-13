@@ -6,6 +6,7 @@ nav:
     - Hello World: hello_world.md
     - RPi Setup: rpi_setup.md
   - Social:
+    - social/index.md
     - LinkedIn: https://linkedin.com/in/santiago-olivar
     - GitHub: https://github.com/bubl-ai/
     - HuggingFace: https://huggingface.co/bubl-ai
