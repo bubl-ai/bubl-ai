@@ -16,7 +16,6 @@ theme:
   favicon: _static/logo.png
   features:
   - navigation.indexes
-  - navigation.top
   - navigation.instant
   - toc.follow
   - search.suggest
