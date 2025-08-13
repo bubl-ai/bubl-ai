@@ -5,8 +5,11 @@ nav:
     - index.md
     - Hello World: hello_world.md
     - RPi Setup: rpi_setup.md
-  - LinkedIn: https://linkedin.com/in/yourusername
-  - GitHub: https://github.com/yourusername
+  - Social:
+    - LinkedIn: https://linkedin.com/in/santiago-olivar
+    - GitHub: https://github.com/bubl-ai/
+    - HuggingFace: https://huggingface.co/bubl-ai
+    - Email: mailto:contact.bubl.ai@example.com
 
 theme:
   logo: _static/logo.png
@@ -40,4 +43,4 @@ extra:
     - icon: fontawesome/solid/envelope
       link: mailto:contact.bubl.ai@example.com
     - icon: fontawesome/solid/face-grin-tears
-      link: https://twitter.com/bubl_ai
+      link: https://huggingface.co/bubl-ai
