@@ -43,7 +43,7 @@ license = "MIT"
 maintainers = [
     {email = "contact.bubl.ai@gmail.com", name = "Santiago Olivar"},
 ]
-name = "bubl"
+name = "bubl_ai"
 readme = "README.md"
 requires-python = ">=3.10,<4.0"
 version = "0.0.1"
