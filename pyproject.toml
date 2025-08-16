@@ -56,6 +56,10 @@ ignore-words-list = ""  # Add any words you want to ignore here, separated by co
 skip = ""  # Add any files or directories you want to skip here, separated by commas.
 
 
+[tool.hatch.build.targets.wheel]
+packages = ["bubl_ai/bubl"]
+
+
 [tool.mypy]
 disallow_untyped_defs = true  # Requires all functions to have type annotations
 exclude = ["_static", "build", "examples", "notebooks"]
