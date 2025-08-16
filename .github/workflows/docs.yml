@@ -1,9 +1,12 @@
 name: Deploy MkDocs Documentation
 
-# Trigger the workflow on push to main branch
+# Trigger the workflow on push to main branch, but only when docs folder changes
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'  # Also trigger if MkDocs config changes
   pull_request:
     branches: [ main ]
 
