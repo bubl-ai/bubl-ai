@@ -1,46 +1,66 @@
-# Description
+ # 🚀 Pull Request
 
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+## 📝 What's Changed?
 
-Fixes # (issue)
+Provide a clear and concise description of your changes. What problem does this solve? What new functionality does it add?
 
-## New Package?
+**Related Issue:** Closes #(issue_number)
 
-Did I fill in the `tool.llamahub` section in the `pyproject.toml` and provide a detailed README.md for my new integration or package?
+## 🔧 Type of Change
 
-- [ ] Yes
-- [ ] No
+Check all that apply:
 
-## Version Bump?
+- [ ] 🐛 Bug fix (resolves an issue without breaking existing functionality)
+- [ ] ✨ New feature (adds functionality without breaking changes)
+- [ ] 💥 Breaking change (may impact existing functionality)
+- [ ] 📚 Documentation update
+- [ ] 🔄 Refactoring (code improvements without functional changes)
+- [ ] ⚡ Performance improvement
 
-Did I bump the version in the `pyproject.toml` file of the package I am updating? (Except for the `llama-index-core` package)
+## 🧪 Testing Strategy
 
-- [ ] Yes
-- [ ] No
+Quality assurance is essential for maintainable code. How did you verify your changes work correctly?
 
-## Type of Change
+- [ ] ✅ Added comprehensive unit tests for new functionality
+- [ ] 🔍 Existing tests adequately cover these changes
+- [ ] 🎯 Added integration tests where applicable
+- [ ] 📊 Verified performance impact (if relevant)
 
-Please delete options that are not relevant.
+**Test Details:**
+<!-- Describe your testing approach, edge cases covered, etc. -->
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+## ✅ Pre-Merge Checklist
 
-## How Has This Been Tested?
+Ensure your contribution meets our standards:
 
-Your pull-request will likely not be merged unless it is covered by some form of impactful unit testing.
+**Code Quality:**
+- [ ] 👀 Performed thorough self-review of all changes
+- [ ] 💬 Added clear comments for complex logic
+- [ ] 📖 Updated relevant documentation
+- [ ] ⚠️ No new warnings or errors introduced
 
-- [ ] I added new unit tests to cover this change
-- [ ] I believe this change is already covered by existing unit tests
+**Testing & Validation:**
+- [ ] 🧪 All new and existing tests pass locally
+- [ ] 🔧 Ran `uv run make format; uv run make lint` successfully
+- [ ] 🎯 Verified changes work as expected in relevant environments
 
-## Suggested Checklist:
+**Documentation:**
+- [ ] 📝 Updated README or other docs if needed
+- [ ] 🏷️ Added appropriate code comments
+- [ ] 📋 Updated API documentation (if applicable)
 
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] I have added Google Colab support for the newly added notebooks.
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] I ran `uv run make format; uv run make lint` to appease the lint gods
+## 📷 Screenshots/Demo (if applicable)
+
+<!-- Add screenshots, GIFs, or demo links for UI changes -->
+
+## 💭 Additional Context
+
+<!-- Add any other relevant information, design decisions, or considerations -->
+
+## 🤝 Reviewer Notes
+
+<!-- Any specific areas you'd like reviewers to focus on? -->
+
+---
+
+**Ready for review!** 🎉 Thank you for contributing to our project!

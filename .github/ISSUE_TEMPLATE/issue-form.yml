@@ -6,13 +6,17 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-        Please complete the following form to help us assist you.
+        ## 🐛 Bug Report
+        
+        Thank you for reporting a bug! Your help in identifying issues makes this project more stable and reliable.
+        
+        Please fill out the information below so we can reproduce and fix the issue quickly.
   - type: textarea
     id: what-happened
     attributes:
-      label: Bug Description
-      description: What happened?
+      label: What Went Wrong?
+      description: Describe the bug you encountered. What did you expect to happen vs. what actually happened?
+      placeholder: "Clearly describe the issue, including what you expected vs. what occurred..."
     validations:
       required: true
   - type: textarea
@@ -25,6 +29,7 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Relevant Logs/Tracbacks
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Error Logs & Stack Traces
+      description: Paste any relevant error messages, logs, or stack traces here. This helps us pinpoint the exact issue.
+      placeholder: "Paste your error logs here..."
       render: shell

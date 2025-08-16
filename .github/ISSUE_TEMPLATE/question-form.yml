@@ -6,12 +6,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this question form!
-        Please complete the following form to help us assist you.
+        ## ❓ General Question
+        
+        Have a question about the project? You're in the right place! We're here to help.
+        
+        Please provide as much context as possible so we can give you the best answer.
   - type: textarea
     id: question
     attributes:
-      label: Question
-      description: Ask your question here!
+      label: Your Question
+      description: What would you like to know? Include any relevant context, what you've already tried, or specific use cases you're working with.
+      placeholder: "Ask your question here. Feel free to include background information, code snippets, or examples to help us understand what you're looking for..."
     validations:
       required: true
