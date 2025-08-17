@@ -53,7 +53,7 @@ version = "0.0.1"
 check-filenames = true
 check-hidden = true # Check hidden files and directories (those starting with a dot).
 ignore-words-list = "bubl,bubl-ai"  # Add any words you want to ignore here, separated by commas.
-skip = ""  # Add any files or directories you want to skip here, separated by commas.
+skip = "bubl-core/bubl/core/_static"  # Add any files or directories you want to skip here, separated by commas.
 
 
 [tool.hatch.build.targets.wheel]
