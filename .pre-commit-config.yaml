@@ -92,7 +92,7 @@ repos:
         args:
           [
             "--ignore-words-list",
-            "", 
+            "bubl,bubl-ai", 
           ]
 
   - repo: https://github.com/srstevenson/nb-clean
