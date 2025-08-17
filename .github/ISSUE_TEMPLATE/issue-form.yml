@@ -31,5 +31,5 @@ body:
     attributes:
       label: Error Logs & Stack Traces
       description: Paste any relevant error messages, logs, or stack traces here. This helps us pinpoint the exact issue.
-      placeholder: "Paste your error logs here..."
+      placeholder: "Paste your error logs here."
       render: shell
