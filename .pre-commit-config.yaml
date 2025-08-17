@@ -10,16 +10,16 @@ repos:
       - id: check-merge-conflict # Finds merge conflict markers
       - id: check-symlinks # Validates symbolic links
       - id: check-toml # Validates TOML syntax
-        exclude: bubl-core/bubl/core/_static
+        exclude: bubl-ai-core/bubl_ai/core/_static
       - id: check-yaml # Validates YAML syntax
-        exclude: bubl-core/bubl/core/_static
+        exclude: bubl-ai-core/bubl_ai/core/_static
       - id: detect-private-key # Prevents committing private keys
       - id: end-of-file-fixer # Ensures files end with newline
-        exclude: bubl-core/bubl/core/_static
+        exclude: bubl-ai-core/bubl_ai/core/_static
       - id: mixed-line-ending # Ensures consistent line endings
-        exclude: bubl-core/bubl/core/_static
+        exclude: bubl-ai-core/bubl_ai/core/_static
       - id: trailing-whitespace # Removes trailing whitespace
-        exclude: bubl-core/bubl/core/_static
+        exclude: bubl-ai-core/bubl_ai/core/_static
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
     rev: v0.11.8
@@ -52,7 +52,7 @@ repos:
             "types-PyYAML", # Type stubs for PyYAML
             "types-protobuf==4.24.0.4", # Specific protobuf type stubs version
           ]
-        exclude: ^(docs/|bubl-core/bubl/core/_static)
+        exclude: ^(docs/|bubl-ai-core/bubl_ai/core/_static)
         args: [
             --namespace-packages, # Enable namespace package support
             --explicit-package-bases, # Require explicit package bases
@@ -60,7 +60,7 @@ repos:
             --ignore-missing-imports, # Ignore imports that can't be resolved
             --python-version=3.10, # Target Python 3.10 compatibility
           ]
-        entry: bash -c "export MYPYPATH=bubl"
+        entry: bash -c "export MYPYPATH=bubl_ai"
 
   - repo: https://github.com/adamchainz/blacken-docs
     rev: 1.16.0
@@ -76,7 +76,7 @@ repos:
     rev: v3.0.3
     hooks:
       - id: prettier
-        exclude: bubl-core/bubl/core/_static|poetry.lock|docs/docs
+        exclude: bubl-ai-core/bubl_ai/core/_static|poetry.lock|docs/docs
 
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
@@ -86,7 +86,7 @@ repos:
         exclude: |
           poetry.lock|
           (\/.*?\.[\w:]+)/pyproject.toml|
-          bubl-core/bubl/core/_static|
+          bubl-ai-core/bubl_ai/core/_static|
           (\/.*?\.[\w:]+)/poetry.lock
 
   - repo: https://github.com/srstevenson/nb-clean

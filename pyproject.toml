@@ -37,7 +37,7 @@ license = "MIT"
 maintainers = [
     {email = "contact.bubl.ai@gmail.com", name = "Santiago Olivar"},
 ]
-name = "bubl_ai"
+name = "bubl-ai"
 readme = "README.md"
 requires-python = ">=3.10,<4.0"
 version = "0.0.1"
@@ -46,17 +46,17 @@ version = "0.0.1"
 check-filenames = true
 check-hidden = true  # Check hidden files and directories (those starting with a dot).
 ignore-words-list = "bubl,bubl-ai"  # Add any words you want to ignore here, separated by commas.
-skip = "bubl-core/bubl/core/_static"  # Add any files or directories you want to skip here, separated by commas.
+skip = "bubl-ai-core/bubl_ai/core/_static"  # Add any files or directories you want to skip here, separated by commas.
 
 [tool.hatch.build.targets.wheel]
-packages = ["bubl_ai/bubl"]
+include = ["_bubl-ai/bubl_ai"]
 
 [tool.mypy]
 disallow_untyped_defs = true  # Requires all functions to have type annotations
 exclude = ["_static", "build", "examples", "notebooks"]
 ignore_missing_imports = true  # Suppresses errors when MyPy can't find type information for imported libraries
 explicit_package_bases = true  # this with mypy_paths tells mypy where the root of the package is
-mypy_path = "bubl"
+mypy_path = "bubl_ai"
 namespace_packages = true  # package without __init__.py files
 plugins = "pydantic.mypy"  # better type checking of Pydantic models.
 python_version = "3.10"
