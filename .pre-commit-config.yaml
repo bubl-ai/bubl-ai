@@ -4,62 +4,61 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0 
+    rev: v4.5.0
     hooks:
-      - id: check-byte-order-marker                   # Prevents BOMs in files
-      - id: check-merge-conflict                      # Finds merge conflict markers
-      - id: check-symlinks                            # Validates symbolic links
-      - id: check-toml                                # Validates TOML syntax
+      - id: check-byte-order-marker # Prevents BOMs in files
+      - id: check-merge-conflict # Finds merge conflict markers
+      - id: check-symlinks # Validates symbolic links
+      - id: check-toml # Validates TOML syntax
         exclude: bubl-core/bubl/core/_static
-      - id: check-yaml                                # Validates YAML syntax
+      - id: check-yaml # Validates YAML syntax
         exclude: bubl-core/bubl/core/_static
-      - id: detect-private-key                        # Prevents committing private keys
-      - id: end-of-file-fixer                         # Ensures files end with newline
+      - id: detect-private-key # Prevents committing private keys
+      - id: end-of-file-fixer # Ensures files end with newline
         exclude: bubl-core/bubl/core/_static
-      - id: mixed-line-ending                         # Ensures consistent line endings
+      - id: mixed-line-ending # Ensures consistent line endings
         exclude: bubl-core/bubl/core/_static
-      - id: trailing-whitespace                       # Removes trailing whitespace
+      - id: trailing-whitespace # Removes trailing whitespace
         exclude: bubl-core/bubl/core/_static
-        
+
   - repo: https://github.com/charliermarsh/ruff-pre-commit
     rev: v0.11.8
     hooks:
-      - id: ruff                                      # Main Ruff linting hook
-        args: [--exit-non-zero-on-fix, --fix]         # Auto-fix and exit with error if fixes applied
+      - id: ruff # Main Ruff linting hook
+        args: [--exit-non-zero-on-fix, --fix] # Auto-fix and exit with error if fixes applied
         exclude: ".*poetry.lock|.*_static"
-      - id: ruff-format                               # Ruff code formatting hook
+      - id: ruff-format # Ruff code formatting hook
         exclude: ".*poetry.lock|.*_static|.*uv.lock|.*ipynb|.*docs.*"
 
   - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 23.10.1
     hooks:
-      - id: black-jupyter                             # Format Python in notebooks and .py files
-        name: black-docs-py                           # Custom name for clarity
-        alias: black                                  # Shorter reference alias
-        files: ^(docs/|examples/)                     # Only apply to docs and examples
-        args: [--line-length=79]                      # Use 79 char line length for docs
+      - id: black-jupyter # Format Python in notebooks and .py files
+        name: black-docs-py # Custom name for clarity
+        alias: black # Shorter reference alias
+        files: ^(docs/|examples/) # Only apply to docs and examples
+        args: [--line-length=79] # Use 79 char line length for docs
 
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.0.1
     hooks:
       - id: mypy
-        additional_dependencies:                      # Install additional type stubs
+        additional_dependencies: # Install additional type stubs
           [
-            "types-requests",                         # Type stubs for requests library
-            "types-Deprecated",                       # Type stubs for Deprecated library
-            "types-redis",                            # Type stubs for redis library
-            "types-setuptools",                       # Type stubs for setuptools
-            "types-PyYAML",                           # Type stubs for PyYAML
-            "types-protobuf==4.24.0.4",               # Specific protobuf type stubs version
+            "types-requests", # Type stubs for requests library
+            "types-Deprecated", # Type stubs for Deprecated library
+            "types-redis", # Type stubs for redis library
+            "types-setuptools", # Type stubs for setuptools
+            "types-PyYAML", # Type stubs for PyYAML
+            "types-protobuf==4.24.0.4", # Specific protobuf type stubs version
           ]
         exclude: ^(docs/|bubl-core/bubl/core/_static)
-        args:
-          [
-            --namespace-packages,                     # Enable namespace package support
-            --explicit-package-bases,                 # Require explicit package bases
-            --disallow-untyped-defs,                  # Disallow functions without type annotations
-            --ignore-missing-imports,                 # Ignore imports that can't be resolved
-            --python-version=3.10,                    # Target Python 3.10 compatibility
+        args: [
+            --namespace-packages, # Enable namespace package support
+            --explicit-package-bases, # Require explicit package bases
+            --disallow-untyped-defs, # Disallow functions without type annotations
+            --ignore-missing-imports, # Ignore imports that can't be resolved
+            --python-version=3.10, # Target Python 3.10 compatibility
           ]
         entry: bash -c "export MYPYPATH=bubl"
 
@@ -67,11 +66,11 @@ repos:
     rev: 1.16.0
     hooks:
       - id: blacken-docs
-        name: black-docs-text                         # Custom name
-        alias: black                                  # Alias for reference
+        name: black-docs-text # Custom name
+        alias: black # Alias for reference
         types_or: [rst, markdown, tex]
         additional_dependencies: [black==23.10.1]
-        args: [--line-length=79]                      # Use 79 char line length
+        args: [--line-length=79] # Use 79 char line length
 
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: v3.0.3
@@ -83,7 +82,7 @@ repos:
     rev: v2.2.6
     hooks:
       - id: codespell
-        additional_dependencies: [tomli]              # Install TOML parsing library
+        additional_dependencies: [tomli] # Install TOML parsing library
         exclude: |
           poetry.lock|
           (\/.*?\.[\w:]+)/pyproject.toml|
@@ -94,7 +93,7 @@ repos:
     rev: 3.1.0
     hooks:
       - id: nb-clean
-        args: [--preserve-cell-outputs, --remove-empty-cells]  # Keep outputs, remove empty cells
+        args: [--preserve-cell-outputs, --remove-empty-cells] # Keep outputs, remove empty cells
 
   - repo: https://github.com/pappasam/toml-sort
     rev: v0.23.1

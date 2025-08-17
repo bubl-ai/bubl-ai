@@ -2,26 +2,26 @@ site_name: "bubl-ai"
 site_dir: ../site
 nav:
   - Home:
-    - index.md
-    - Hello World: hello_world.md
-    - RPi Setup: rpi_setup.md
+      - index.md
+      - Hello World: hello_world.md
+      - RPi Setup: rpi_setup.md
   - Social:
-    - social/index.md
-    - LinkedIn: https://linkedin.com/in/santiago-olivar
-    - GitHub: https://github.com/bubl-ai/
-    - HuggingFace: https://huggingface.co/bubl-ai
-    - Email: mailto:contact.bubl.ai@example.com
+      - social/index.md
+      - LinkedIn: https://linkedin.com/in/santiago-olivar
+      - GitHub: https://github.com/bubl-ai/
+      - HuggingFace: https://huggingface.co/bubl-ai
+      - Email: mailto:contact.bubl.ai@example.com
 
 theme:
   logo: _static/logo.png
   favicon: _static/logo.png
   features:
-  - navigation.indexes
-  - navigation.instant
-  - toc.follow
-  - search.suggest
-  - search.highlight
-  - content.code.copy
+    - navigation.indexes
+    - navigation.instant
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
   name: material
   palette:
     - accent: green

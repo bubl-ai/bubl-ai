@@ -7,9 +7,9 @@ body:
     attributes:
       value: |
         ## 🚀 Feature Request
-        
+
         Thank you for suggesting a new feature! Your input helps make this project better for everyone.
-        
+
         Please provide detailed information below to help us understand and evaluate your request.
   - type: textarea
     id: feature-description

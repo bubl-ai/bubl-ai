@@ -3,14 +3,14 @@ name: Deploy MkDocs Documentation
 # Trigger the workflow on push to main branch, but only when docs folder changes
 on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
-      - 'docs/**'
-      - 'mkdocs.yml'  # Also trigger if MkDocs config changes
+      - "docs/**"
+      - "mkdocs.yml" # Also trigger if MkDocs config changes
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
-# Allow manual triggering from the Actions tab
+  # Allow manual triggering from the Actions tab
   workflow_dispatch:
 
 # Set permissions for GitHub Pages deployment
@@ -35,7 +35,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install dependencies
         run: |
@@ -54,7 +54,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'site'
+          path: "site"
 
   # Deploy job
   deploy:

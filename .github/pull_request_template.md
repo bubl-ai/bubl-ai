@@ -1,4 +1,4 @@
- # 🚀 Pull Request
+# 🚀 Pull Request
 
 ## 📝 What's Changed?
 
@@ -27,6 +27,7 @@ Quality assurance is essential for maintainable code. How did you verify your ch
 - [ ] 📊 Verified performance impact (if relevant)
 
 **Test Details:**
+
 <!-- Describe your testing approach, edge cases covered, etc. -->
 
 ## ✅ Pre-Merge Checklist
@@ -34,17 +35,20 @@ Quality assurance is essential for maintainable code. How did you verify your ch
 Ensure your contribution meets our standards:
 
 **Code Quality:**
+
 - [ ] 👀 Performed thorough self-review of all changes
 - [ ] 💬 Added clear comments for complex logic
 - [ ] 📖 Updated relevant documentation
 - [ ] ⚠️ No new warnings or errors introduced
 
 **Testing & Validation:**
+
 - [ ] 🧪 All new and existing tests pass locally
 - [ ] 🔧 Ran `uv run make format; uv run make lint` successfully
 - [ ] 🎯 Verified changes work as expected in relevant environments
 
 **Documentation:**
+
 - [ ] 📝 Updated README or other docs if needed
 - [ ] 🏷️ Added appropriate code comments
 - [ ] 📋 Updated API documentation (if applicable)

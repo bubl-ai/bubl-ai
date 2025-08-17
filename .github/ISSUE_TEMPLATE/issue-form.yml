@@ -7,9 +7,9 @@ body:
     attributes:
       value: |
         ## 🐛 Bug Report
-        
+
         Thank you for reporting a bug! Your help in identifying issues makes this project more stable and reliable.
-        
+
         Please fill out the information below so we can reproduce and fix the issue quickly.
   - type: textarea
     id: what-happened

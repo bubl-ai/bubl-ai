@@ -7,9 +7,9 @@ body:
     attributes:
       value: |
         ## ❓ General Question
-        
+
         Have a question about the project? You're in the right place! We're here to help.
-        
+
         Please provide as much context as possible so we can give you the best answer.
   - type: textarea
     id: question
