@@ -7,20 +7,20 @@ dev = [
     "black[jupyter]>=23.7.0,<=24.3.0",  # Formatter with support for Jupyter
     "codespell[toml]>=v2.2.6",  # Spelling checker
     "ipykernel>=6.29.5,<7",  # Jupyter kernel for running python code in notebooks
-    "mypy==1.11.0",  # static type checker
+    "mypy==1.17.1",  # static type checker
     "pandas",  # Always install latest version
-    "pre-commit==3.2.0",  # Code quality checks
-    "pylint==2.15.10",  # Linter
+    "pre-commit==4.3.0",  # Code quality checks
+    "pylint==3.3.8",  # Linter
     "pytest-asyncio>=0.23.7",  # Async test support
     "pytest-mock>=3.14.0",  # Pytest plugin for easier mocking with the unittest.mock library.
     "pytest>=8.2.1",  # Testing framework
-    "ruff==0.11.11",  # Linter and formatter
+    "ruff==0.12.9",  # Linter and formatter
     "types-Deprecated>=0.1.0",  # Type stubs for the Deprecated library, for better type checking.
     "types-PyYAML>=6.0.12.12,<7",  # Type stubs for the PyYAML library.
     "types-protobuf>=4.24.0.4,<5",  # Type stubs for the protobuf library.
-    "types-redis==4.5.5.0",  # Type stubs for the Redis library.
-    "types-requests==2.28.11.8",  # Type stubs for the Requests library.
-    "types-setuptools==67.1.0.0",  # Type stubs for the Setuptools library.
+    "types-redis==4.6.0.20241004",  # Type stubs for the Redis library.
+    "types-requests==2.32.4.20250809",  # Type stubs for the Requests library.
+    "types-setuptools==80.9.0.20250809",  # Type stubs for the Setuptools library.
     "tomli>=2.2.1",  # Parsing toml files used to read and work with toml files in python
 ]
 
